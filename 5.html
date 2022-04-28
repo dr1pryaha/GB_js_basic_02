@@ -84,19 +84,24 @@ Infinity делать не нужно, однако, в случае если б
       function mathOperation(arg1, arg2, operation) {
         if (operation === "+") {
           return sum(arg1, arg2);
-        } else if (operation === "-") {
+        }
+        if (operation === "-") {
           return sub(arg1, arg2);
-        } else if (operation === "*") {
+        }
+        if (operation === "*") {
           return mul(arg1, arg2);
-        } else if (operation === "/") {
+        }
+        if (operation === "/") {
           return div(arg1, arg2);
         }
+        return NaN;
       }
 
       console.log(mathOperation(8, 2, "+"));
       console.log(mathOperation(8, 2, "-"));
       console.log(mathOperation(8, 2, "*"));
       console.log(mathOperation(8, 2, "/"));
+      console.log(mathOperation(8, 2, ":"));
     </script>
   </body>
 </html>
